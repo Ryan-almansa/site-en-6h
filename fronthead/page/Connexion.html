@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetBook - Connexion</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/connexion.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../../main.html" class="logo">Meet<span>Book</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="../../main.html">Accueil</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="tari.html">Tarifs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Connexion.html" class="btn-connexion active">Connexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="connexion-section">
+        <div class="container">
+            <div class="connexion-container">
+                <div class="connexion-sidebar">
+                    <div class="logo-container">
+                        <div class="logo-connexion">Meet<span>Book</span></div>
+                    </div>
+                    <h3>Bienvenue sur MeetBook</h3>
+                    <p>Connectez-vous pour accéder à votre espace personnel et gérer vos rendez-vous.</p>
+                    <div class="illustration">
+                        <svg viewBox="0 0 200 200" width="200" height="200">
+                            <circle cx="100" cy="70" r="40" fill="#4361ee" opacity="0.8" />
+                            <rect x="60" y="120" width="80" height="60" rx="10" fill="#48bfe3" opacity="0.8" />
+                            <path d="M100 110 L100 180" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                            <path d="M80 140 L120 140" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                            <path d="M80 160 L120 160" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="connexion-content">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="connexion">Connexion</button>
+                        <button class="tab-btn" data-tab="inscription">Inscription</button>
+                    </div>
+
+                    <div class="tab-content active" id="connexion">
+                        <h2>Connexion</h2>
+                        <p class="subtitle">Accédez à votre espace personnel</p>
+
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="login-email">Email</label>
+                                <input type="email" id="login-email" class="form-control" placeholder="votre@email.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="login-password">Mot de passe</label>
+                                <div class="password-container">
+                                    <input type="password" id="login-password" class="form-control"
+                                        placeholder="Votre mot de passe" required>
+                                    <button type="button" class="toggle-password">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">Se souvenir de moi</label>
+                                </div>
+                                <a href="#" class="forgot-password">Mot de passe oublié?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+                        </form>
+
+                        <div class="social-login">
+                            <p>Ou connectez-vous avec</p>
+                            <div class="social-buttons">
+                                <button class="social-btn google">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032
+                    c0-3.331,2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2
+                    C7.021,2,2.543,6.477,2.543,12c0,5.523,4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z" />
+                                    </svg>
+                                    Google
+                                </button>
+                                <button class="social-btn facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                                    </svg>
+                                    Facebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="inscription">
+                        <h2>Inscription</h2>
+                        <p class="subtitle">Créez votre compte en quelques étapes</p>
+
+                        <form id="register-form">
+                            <div class="form-group">
+                                <label for="register-name">Nom complet</label>
+                                <input type="text" id="register-name" class="form-control"
+                                    placeholder="Votre nom et prénom" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register
