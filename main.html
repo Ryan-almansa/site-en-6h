@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeetBook -  Réservation</title>
+  <link rel="stylesheet" href="./fronthead/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Meet<span>Book</span></a>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Prenez rendez-vous en quelques clics</h1>
+      <p>Notre système de réservation en ligne simple et rapide vous permet de choisir le service, la date et l'heure qui vous convient.</p>
+      <a href="#booking" class="btn">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="booking-container">
+        <div class="booking-sidebar">
+          <h3>Nos Services</h3>
+          <ul class="service-list">
+            <li class="service-item active" data-service="consultation">
+              <h4>Consultation</h4>
+              <p>45 minutes - 60€</p>
+            </li>
+            <li class="service-item" data-service="therapie">
+              <h4>Séance de thérapie</h4>
+              <p>60 minutes - 80€</p>
+            </li>
+            <li class="service-item" data-service="coaching">
+              <h4>Coaching personnel</h4>
+              <p>90 minutes - 120€</p>
+            </li>
+            <li class="service-item" data-service="bilan">
+              <h4>Bilan complet</h4>
+              <p>120 minutes - 150€</p>
+            </li>
+          </ul>
+        </div>
+        <div class="booking-content">
+          <div class="booking-step active" id="step-1">
+            <h2>Choisissez une date</h2>
+            
+            <div class="calendar-header">
+              <div class="calendar-nav">
+                <button class="calendar-btn" id="prev-month">&lt;</button>
+                <span class="calendar-month">Mai 2025</span>
+                <button class="calendar-btn" id="next-month">&gt;</button>
+              </div>
+            </div>
+            
+            <div class="calendar">
+              <div class="weekday">Lun</div>
+              <div class="weekday">Mar</div>
+              <div class="weekday">Mer</div>
+              <div class="weekday">Jeu</div>
+              <div class="weekday">Ven</div>
+              <div class="weekday">Sam</div>
+              <div class="weekday">Dim</div>
+              
+              <div class="day unavailable">28</div>
+              <div class="day unavailable">29</div>
+              <div class="day unavailable">30</div>
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day unavailable">3</div>
+              <div class="day unavailable">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day active">7</div>
+              <div class="day">8</div>
+              <div class="day">9</div>
+              <div class="day unavailable">10</div>
+              <div class="day unavailable">11</div>
+            </div>
+            
+            <div class="steps-buttons">
+              <div></div>
+              <button class="btn btn-primary" id="to-step-2">Continuer</button>
+            </div>
+          </div>
+          
+          <div class="booking-step" id="step-2">
+            <h2>Choisissez un horaire</h2>
+            
+            <p>Horaires disponibles pour le <span id="selected-date">7 mai 2025</span> :</p>
+            
+            <div class="time-slots">
+              <div class="time-slot unavailable">09:00</div>
+              <div class="time-slot">10:00</div>
+              <div class="time-slot">11:00</div>
+              <div class="time-slot unavailable">12:00</div>
+              <div class="time-slot">14:00</div>
+              <div class="time-slot active">15:00</div>
+              <div class="time-slot">16:00</div>
+              <div class="time-slot">17:00</div>
+              <div class="time-slot unavailable">18:00</div>
+            </div>
+            
+            <div class="steps-buttons">
+              <button class="btn" id="to-step-1">Retour</button>
+              <button class="btn btn-primary" id="to-step-3">Continuer</button>
+            </div>
+          </div>
+          
+          <div class="booking-step" id="step-3">
+            <h2>Vos informations</h2>
+            
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" class="form-control" placeholder="Votre nom et prénom" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="votre@email.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Votre numéro de téléphone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="notes">Notes (optionnel)</label>
+              <textarea id="notes" class="form-control" rows="3" placeholder="Informations supplémentaires concernant votre rendez-vous"></textarea>
+            </div>
+            
+            <div class="steps-buttons">
+              <button class="btn" id="to-step-2-from-3">Retour</button>
+              <button class="btn btn-primary" id="to-step-4">Vérifier</button>
+            </div>
+          </div>
+          
+          
+          <div class="booking-step" id="step-4">
+            <h2>Résumé de votre rendez-vous</h2>
+            
+            <div class="notification notification-success" id="validation-message">
+              Veuillez vérifier les informations ci-dessous avant de confirmer.
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Service</div>
+              <div class="summary-value" id="summary-service">Consultation (45 min)</div>
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Date</div>
+              <div class="summary-value" id="summary-date">7 mai 2025</div>
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Heure</div>
+              <div class="summary-value" id="summary-time">15:00</div>
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Nom</div>
+              <div class="summary-value" id="summary-name">Jean Dupont</div>
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Email</div>
+              <div class="summary-value" id="summary-email">jean.dupont@example.com</div>
+            </div>
+            
+            <div class="summary-item">
+              <div class="summary-label">Téléphone</div>
+              <div class="summary-value" id="summary-phone">06 12 34 56 78</div>
+            </div>
+            
+            <div class="steps-buttons">
+              <button class="btn" id="to-step-3-from-4">Modifier</button>
+              <button class="btn btn-primary" id="confirm-booking">Confirmer</button>
+            </div>
+          </div>
+          
+          <!-- Step 5: Confirmation -->
+          <div class="booking-step" id="step-5">
+            <div class="confirmation-message">
+              <!-- SVG check icon -->
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#4cc9a0" stroke-width="5" />
+                <path d="M30 50 L45 65 L70 35" fill="none" stroke="#4cc9a0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              
+              <h2>Réservation confirmée !</h2>
+              <p>Votre rendez-vous a été enregistré avec succès. Vous recevrez un email de confirmation dans quelques instants.</p>
+              <button class="btn btn-primary" id="new-booking">Nouvelle réservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./fronthead/style.js"></script>
+
+
+</body>
+</html>
