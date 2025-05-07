@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeetBook - Nos Tarifs</title>
+  <link rel="stylesheet" href="../style/tarif.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Meet<span>Book</span></a>
+        <nav>
+          <ul>
+            <li><a href="../../main.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tari.html" class="active">Tarifs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Nos Tarifs</h1>
+      <p>Des formules adaptées à tous les besoins avec un excellent rapport qualité-prix.</p>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Choisissez votre formule</h2>
+        <p>Des tarifs transparents sans mauvaises surprises, avec possibilité de personnalisation.</p>
+        
+        <div class="toggle-container">
+          <span>Paiement mensuel</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billing-toggle">
+            <span class="toggle-slider"></span>
+          </label>
+          <span>Paiement annuel <span class="discount-badge">-15%</span></span>
+        </div>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Formule Découverte -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Découverte</h3>
+            <div class="price">
+              <span class="price-value" data-monthly="60" data-annual="51">60€</span>
+              <span class="price-period">/ séance</span>
+            </div>
+            <p>Parfait pour débuter</p>
+          </div>
+          
+          <div class="pricing-features">
+            <ul>
+              <li>1 séance de consultation</li>
+              <li>45 minutes par séance</li>
+              <li>Accès à notre documentation</li>
+              <li>Suivi par email</li>
+              <li class="unavailable">Accès prioritaire</li>
+              <li class="unavailable">Rapport personnalisé</li>
+            </ul>
+          </div>
+          
+          <div class="pricing-footer">
+            <a href="index.html#booking" class="btn">Réserver maintenant</a>
+          </div>
+        </div>
+        
+        <!-- Formule Standard -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Populaire</div>
+          <div class="pricing-header">
+            <h3>Standard</h3>
+            <div class="price">
+              <span class="price-value" data-monthly="200" data-annual="170">200€</span>
+              <span class="price-period">/ mois</span>
+            </div>
+            <p>Notre formule la plus demandée</p>
+          </div>
+          
+          <div class="pricing-features">
+            <ul>
+              <li>3 séances par mois</li>
+              <li>60 minutes par séance</li>
+              <li>Accès à notre documentation</li>
+              <li>Suivi par email et téléphone</li>
+              <li>Accès prioritaire</li>
+              <li class="unavailable">Rapport personnalisé</li>
+            </ul>
+          </div>
+          
+          <div class="pricing-footer">
+            <a href="index.html#booking" class="btn btn-primary">Réserver maintenant</a>
+          </div>
+        </div>
+        
+        <!-- Formule Premium -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="price">
+              <span class="price-value" data-monthly="350" data-annual="297">350€</span>
+              <span class="price-period">/ mois</span>
+            </div>
+            <p>Pour un suivi intensif</p>
+          </div>
+          
+          <div class="pricing-features">
+            <ul>
+              <li>5 séances par mois</li>
+              <li>60 minutes par séance</li>
+              <li>Accès à notre documentation</li>
+              <li>Suivi privilégié 7j/7</li>
+              <li>Accès prioritaire</li>
+              <li>Rapport personnalisé mensuel</li>
+            </ul>
+          </div>
+          
+          <div class="pricing-footer">
+            <a href="index.html#booking" class="btn">Réserver maintenant</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Questions fréquentes</h2>
+        <p>Tout ce que vous devez savoir sur nos tarifs et conditions.</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment fonctionnent les abonnements ?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Nos abonnements sont sans engagement. Vous pouvez les résilier à tout moment avec un préavis d'un mois. Le paiement s'effectue au début de chaque période (mensuelle ou annuelle).</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Puis-je reporter mes séances non utilisées ?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Les séances non utilisées pendant le mois peuvent être reportées au mois suivant, dans la limite de 2 séances. Au-delà, elles sont perdues.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Comment annuler ou reporter un rendez-vous ?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez annuler ou reporter un rendez-vous jusqu'à 24h avant l'heure prévue sans frais. Passé ce délai, la séance sera décomptée de votre forfait.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Acceptez-vous les remboursements par les mutuelles ?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Certaines mutuelles peuvent prendre en charge une partie de nos prestations. Nous vous fournirons une facture détaillée que vous pourrez leur soumettre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Vous avez des questions ?</h2>
+      <p>Notre équipe est à votre disposition pour vous aider à choisir la formule la plus adaptée à vos besoins.</p>
+      <a href="#" class="btn btn-white">Contactez-nous</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 MeetBook - Tous droits réservés</p>
+      <p>Un service professionnel de prise de rendez-vous</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://paypal.me/RyanAlmansa?country.x=FR&locale.x=fr_FR" aria-label="PayPal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.158 7.168c.173-1.144-.01-2.048-.552-2.747-.653-.838-1.806-1.256-3.45-1.256h-6.58a.77.77 0 0 0-.76.655L8.13 17.97a.384.384 0 0 0 .38.445h2.534c.293 0 .543-.213.586-.503l.187-1.237a.384.384 0 0 1 .38-.325h.962c3.05 0 5.42-1.243 6.104-4.83.3-1.558.144-2.717-.457-3.452a2.417 2.417 0 0 0-1.78-.745c.71-.333 1.187-.877 1.38-1.55Z"/>
+            <path d="M15.184 9.028c.252-.902-.005-1.518-.43-1.928-.394-.378-.99-.571-1.75-.571H10.4a.43.43 0 0 0-.426.366l-.987 6.503a.43.43 0 0 0 .426.494h1.566a.43.43 0 0 0 .426-.366l.14-.924a.43.43 0 0 1 .426-.366h.294c1.18 0 2.072-.472 2.588-1.608Z"/>
+          </svg>
+        </a>
+        
+        <a href="https://www.instagram.com/ryan.3910/" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
